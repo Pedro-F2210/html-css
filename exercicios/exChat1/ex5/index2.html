@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo-classes</title>
+    <style>
+        div {
+            border-radius: 5px;
+            border: 2.5px solid black;
+            display: inline-block;
+            text-align: center;
+            background-color: grey;
+            width: 120px;
+            height: 120px;
+        }
+
+        div:hover {
+            background-color: rgb(62, 180, 62);
+        }
+
+        div > p {
+            display: none;
+        }
+
+        div:hover > p {
+            display: block;
+        }
+
+        #caixa2:hover {
+            background-color: aqua;
+        }
+
+        #caixa4:hover {
+            background-color: rgb(241, 241, 77);
+        }
+
+        div:active {
+            background-color: rgb(255, 0, 0);
+        }
+
+        #caixa2:active {
+            background-color: red;
+        }
+
+        #caixa4:active {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        1
+        <p>Texto oculto</p>
+    </div>
+    <div id="caixa2">
+        2
+        <p>Texto oculto</p>
+    </div>
+    <div>
+        3
+        <p>Texto oculto</p>
+    </div>
+    <div id="caixa4">
+        4
+        <p>Texto oculto</p>
+    </div>
+    <div>
+        5
+        <p>Texto oculto</p>
+    </div>
+</body>
+</html>
