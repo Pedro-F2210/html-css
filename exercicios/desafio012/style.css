@@ -1,0 +1,128 @@
+@charset "UTF-8";
+@font-face {
+    font-family: 'Archivo Black';
+    src: url('fontes/Archivo_Black/ArchivoBlack-Regular.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Fira Sans';
+    src: url('fontes/Fira_Sans/FiraSans-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Comic Neue';
+    src: url('fontes/Comic_Neue/ComicNeue-BoldItalic.ttf') format('truetype');
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+header > h1 {
+    font-family: 'Archivo Black';
+    font-size: 5em;
+    margin-top: 30px;
+}
+
+header > h2 {
+    font-family: 'Fira Sans';
+    font-size: 16px;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+header > h2 > a {
+    text-decoration-line: none;
+    color: white;
+}
+
+header > h2 > a:hover {
+    text-decoration-line: underline;
+}
+
+#negrito_header {
+    font-weight: bold; 
+}
+
+.inicial_grande {
+    font-size: 150%;
+}
+
+main {
+    font: bold 3em 'Comic Neue';
+    line-height: 1.8em;
+}
+
+body main main{
+    font-weight: 3em;
+}
+
+#bloco1 {
+    color: white;
+    line-height: 1.8em;
+    background-image: linear-gradient(to top, #032004, #011500, #000B00);
+    padding: 20px;
+    border-radius: 0px 0px 10px 10px;
+    max-width: 571px;
+    text-shadow: 1px 1px 0px black;
+}
+
+#imagem_bloco1 {
+    background-image: url(imagens/background001.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 30px;
+}
+
+.paragrafos_normais {
+    margin: 50px;
+    display: block;
+}
+
+#bloco2 {
+    color: white;
+    line-height: 1.8em;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 20px;
+    max-width: 578px;
+    text-shadow: 1px 1px 0px black;
+}    
+
+#imagem_bloco2 {
+    background-image: url(imagens/background002.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    padding: 30px;
+}
+
+footer {
+    font-family: 'Archivo_Black';
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+footer  a {
+    font-weight: bold;
+    color: white;
+    text-decoration-line: none;
+}
+
+footer a:hover {
+    text-decoration-line: underline;
+}
+
