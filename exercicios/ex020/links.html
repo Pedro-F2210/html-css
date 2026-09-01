@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+</head>
+    <style>
+
+        /* SELETORES PERSONALIZADOS
+            # = id
+            . = class
+            : = pseudo-class
+            :: = pseudo-element
+            > = children
+        */
+        a {
+            color: red;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        a:visited {
+            color: darkred;
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: underline;
+        }
+
+        a:active {
+            color: yellow
+        }
+
+        a::after {
+            content: ' [link]';
+            text-decoration: none;
+            font-weight: normal;
+            color: darkgrey;
+        }
+
+        .especial {
+            background-color: rgb(243, 155, 155);
+        }
+        
+        .especial::before {
+            content: '☞ ';
+        }
+
+        .especial::after {
+            content: ' ☜';
+        }
+
+    </style>
+<body>
+    <h1> Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com/Pedro-F2210/portfolio-pedro-ilias">Repositório GitHub</a></li>
+        <li><a href="https://www.youtube.com/watch?v=Ejkb_YpuHWs&list=PLHz_AreHm4dkZ9-atkcmcBaMZdmLHft8n" class="especial">Canal do YouTube</a></li>
+        <li><a href="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-2-de-5-40-horas/aulas/modulo-2-2/" class="especial">Site do CursoemVideo</a></li>
+    </ul>
+    
+</body>
+</html>
