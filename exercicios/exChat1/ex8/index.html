@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ranking das Escolas</title>
+    <style>
+        body {
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        }
+
+        table {
+            width: 700px;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            padding: 10px;
+            border: 1px solid black;
+        }
+
+        thead {
+            background-color: cornflowerblue;
+            color: rgba(6, 10, 4, 0.671);
+        }
+
+        .num {
+            text-align: right;
+        }
+
+        .posicao {
+            text-align: center;
+        }
+
+        .destaque {
+            text-decoration-line: underline;
+            color: gold;
+            background-color: rebeccapurple;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h1>Ranking das Escolas</h1>
+    <table>
+        <thead>
+            <tr>
+                <th scope="col">Posição</th>
+                <th scope="col">Escola</th>
+                <th scope="col">Alunos</th>
+                <th scope="col">Média</th>
+                <th scope="col">Aprovados</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="posicao destaque">1</td>
+                <td class="destaque">Escola A</td>
+                <td class="num destaque">850</td>
+                <td class="num destaque">17,8</td>
+                <td class="num destaque">812</td>
+            </tr>
+            <tr>
+                <td class="posicao">2</td>
+                <td>Escola B</td>
+                <td class="num">720</td>
+                <td class="num">16,9</td>
+                <td class="num">681</td>
+            </tr>
+            <tr>
+                <td class="posicao">3</td>
+                <td>Escola C</td>
+                <td class="num">940</td>
+                <td class="num">16,4</td>
+                <td class="num">857</td>
+            </tr>
+            <tr>
+                <td class="posicao">4</td>
+                <td>Escola D</td>
+                <td class="num">680</td>
+                <td class="num">15,7</td>
+                <td class="num">621</td>
+            </tr>
+            <tr>
+                <td class="posicao">5</td>
+                <td>Escola E</td>
+                <td class="num">790</td>
+                <td class="num">15,1</td>
+                <td class="num">702</td>
+            </tr>
+            <tr>
+                <td class="posicao">6</td>
+                <td>Escola F</td>
+                <td class="num">610</td>
+                <td class="num">14,6</td>
+                <td class="num">548</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th>Total de alunos</th>
+                <td class="num"><strong>4590</strong></td>
+                <th>Média geral</th>
+                <td class="num"><strong>16,1</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
