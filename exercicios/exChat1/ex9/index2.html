@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela avançada</title>
+    <style>
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 500px;
+            position: relative;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        thead {
+            background-color: gray;
+            color: white;
+        }
+
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: gray;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th rowspan="2" scope="col">Aluno</th>
+                <th colspan="4" scope="colgroup">2026</th>
+                <th rowspan="2" scope="col">Média Final</th>
+            </tr>
+            <tr>
+                <th colspan="2" scope="colgroup">1º Período</th>
+                <th colspan="2" scope="colgroup">2º Período</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th scope="row">Pedro</th>
+                <td>19</td>
+                <td>15</td>
+                <td>18</td>
+                <td>19</td>
+                <td>18,5</td>
+            </tr>
+            <tr>
+                <th scope="row">André</th>
+                <td>15</td>
+                <td>16</td>
+                <td>17</td>
+                <td>18</td>
+                <td>16,5</td>
+            </tr>
+            <tr>
+                <th scope="row">João</th>
+                <td>12</td>
+                <td>14</td>
+                <td>15</td>
+                <td>16</td>
+                <td>14,25</td>
+            </tr>
+            <tr>
+                <th scope="row">Maria</th>
+                <td>18</td>
+                <td>19</td>
+                <td>17</td>
+                <td>20</td>
+                <td>18,5</td>
+            </tr>
+            <tr>
+                <th scope="row">Ana</th>
+                <td>14</td>
+                <td>15</td>
+                <td>16</td>
+                <td>17</td>
+                <td>15,5</td>
+            </tr>
+            <tr>
+                <th scope="row">Lucas</th>
+                <td>10</td>
+                <td>13</td>
+                <td>14</td>
+                <td>15</td>
+                <td>13</td>
+            </tr>
+            <tr>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Média</th>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td></td>
+                <td>15,75</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
