@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela Insana</title>
+    <style>
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            position: relative;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 200px;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        caption {
+            background-color: rgb(88, 168, 88);
+            font-size: 20px;
+            position: sticky;
+            text-align: left;
+            font-weight: bold;
+            padding: 2px 8px;
+        }
+
+        .primeira_coluna {
+            position: sticky;
+        }
+
+        .zebra1 {
+            color: rgb(56, 55, 55);
+            background-color: lightgreen;
+        }
+
+        .zebra2 {
+            color: rgb(240, 237, 237);
+            background-color: green;
+        }
+
+        .zebra1:hover {
+            background-color: rgb(255, 72, 0);
+            text-decoration-line: underline;
+            text-decoration-color: blue;
+        }
+
+        .zebra2:hover {
+            background-color:red;
+            text-decoration-line: underline;
+            text-decoration-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <caption>Festival Tech 2026</caption>
+        <thead>
+            <tr>
+                <th class="primeira_coluna" scope="col">Área</th>
+                <th scope="col">Equipa</th>
+                <th scope="col">Manhã</th>
+                <th colspan="4" scope="colgroup">Tarde</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th rowspan="3" scope="rowgroup" class="primeira_coluna">Programação</th>
+                <td class="zebra1">Frontend</td>
+                <td class="zebra2">A</td>
+                <td class="zebra1">HTML</td>
+                <td class="zebra2">CSS</td>
+                <td class="zebra1">JavaScript</td>
+                <td class="zebra2">React</td>
+            </tr>
+            <tr>
+                <td class="zebra1">Backend</td>
+                <td class="zebra2">B</td>
+                <td class="zebra1">C</td>
+                <td class="zebra2">Python</td>
+                <td class="zebra1">MySQL</td>
+                <td class="zebra2">APIs</td>
+            </tr>
+            <tr>
+                <td class="zebra1">Cyber</td>
+                <td class="zebra2">C</td>
+                <td class="zebra1">Linux</td>
+                <td class="zebra2">Redes</td>
+                <td class="zebra1">CTF</td>
+                <td class="zebra2">Forense</td>
+            </tr>
+            <tr>
+                <th rowspan="2" scope="rowgroup" class="primeira_coluna">Design</th>
+                <td class="zebra1">UI/UX</td>
+                <td class="zebra2">D</td>
+                <td class="zebra1">Figma</td>
+                <td class="zebra2">Prototipagem</td>
+                <td class="zebra1">Canva</td>
+                <td class="zebra2">Branding</td>
+            </tr>
+            <tr>
+                <td class="zebra1">Vídeo</td>
+                <td class="zebra2">E</td>
+                <td class="zebra1">CapCut</td>
+                <td class="zebra2">DaVinci</td>
+                <td class="zebra1">Áudio</td>
+                <td class="zebra2">Exportação</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="6">Total de participantes</th>
+                <td><strong>248</strong></td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
