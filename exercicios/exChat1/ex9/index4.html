@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabela de Funcionários</title>
+    <style>
+        body {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+
+        caption {
+            font-size: 2em;
+            margin-bottom: 10px;
+            text-decoration-line: underline;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 600px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 8px;
+        }
+
+        #amarelo {
+            background-color: yellow;
+        }
+
+        #vermelho {
+            background-color: red;
+        }
+
+        #verde {
+            background-color: green;
+        }
+
+        #azul {
+            background-color: blue;
+        }
+
+        tr:nth-child(2n) {
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+        <col id="amarelo">
+        <col span="2" id="vermelho">
+        <col id="verde">
+        <col id="azul">
+        </colgroup>
+        <caption>Funcionários da Empresa</caption>
+        <thead>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">Departamento</th>
+                <th scope="col">Cargo</th>
+                <th scope="col">Idade</th>
+                <th scope="col">Salário</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>João Silva</td>
+                <td>Informática</td>
+                <td>Programador</td>
+                <td>24</td>
+                <td>1200€</td>
+            </tr>
+            <tr>
+                <td>Ana Costa</td>
+                <td>Marketing</td>
+                <td>Designer</td>
+                <td>29</td>
+                <td>1350€</td>
+            </tr>
+            <tr>
+                <td>Pedro Santos</td>
+                <td>Informática</td>
+                <td>Técnico</td>
+                <td>31</td>
+                <td>1400€</td>
+            </tr>
+            <tr>
+                <td>Maria Lopes</td>
+                <td>Recursos Humanos</td>
+                <td>Gestora</td>
+                <td>38</td>
+                <td>1800€</td>
+            </tr>
+            <tr>
+                <td>André Gomes</td>
+                <td>Informática</td>
+                <td>Programador</td>
+                <td>27</td>
+                <td>1500€</td>
+            </tr>
+            <tr>
+                <td>Carla Dias</td>
+                <td>Marketing</td>
+                <td>Analista</td>
+                <td>35</td>
+                <td>1600€</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th colspan="3">Média de idades</th>
+                <td>30,7</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
