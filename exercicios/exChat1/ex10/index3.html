@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard de videojogo</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        header ul  {
+            font-size: 20px;
+            font-weight: bold;
+            display: flex;
+            position: relative;
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+        }
+
+        #definicao {
+            position: absolute;
+            right: 15px;
+            margin: 18px;
+        }
+
+        #online {
+            position: absolute;
+            top: 2px;
+            right: 15px;
+            margin: 20px 6em;
+        }
+
+        #nextplay {
+            margin: 20px;
+        }
+
+        #dashboard {
+            width: 900px;
+            height: 650px;
+            position: relative;
+            border: 2px solid darkviolet;
+            border-radius: 5px;
+            background-image: linear-gradient(yellow, rgb(238, 238, 69), lightyellow)
+        }
+
+        #card-principal {
+            width: 700px;
+            height: 350px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        #imagem {
+            position: relative;
+            background: #111 url('imagem-game.jfif') center/cover no-repeat fixed;
+            width: 600px;
+            height: 300px;
+            border: 1px solid violet;
+            border-radius: 8px;
+        }
+
+        #gta6 {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            background-color: blueviolet;
+            color: yellow;
+            width: 70px;
+            height: 30px;
+            border: 2px solid yellow;
+            border-radius: 7px;
+            bottom: 10px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: inset -2px -2px 3px yellow;
+        }
+
+        hr {
+            height: 2px;
+            background-color: darkviolet;
+            opacity: 0.5;
+        }
+
+        #novo {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            width: 14em;
+            height: 4em;
+            font-weight: bold;
+            font-size: 1.3em;
+            color: darkviolet;
+            background-color: rgb(240, 240, 86);
+            border: 2px solid darkviolet;
+            border-radius: 8px;
+            text-shadow: 1px 1px 1px violet;
+            box-shadow: inset 3px -4px 21px yellow;
+        }
+    </style>
+</head>
+<body>
+    <div id="dashboard">
+        <header>
+            <nav>
+                <ul>
+                    <li id="nextplay">NEXTPLAY</li>
+                    <li id="online">● Online</li>
+                    <li id="definicao">⚙</li>
+                </ul>
+            </nav>
+        </header>
+        <hr>
+        <main id="card-principal">
+            <section id="imagem">
+                <button id="novo">NOVO</button>
+                <span id="gta6">GTA VI</span>
+            </section>
+            <section>
+                <ul class="lista-botoes">
+                <li><button type="button">MISSÕES 24%</button></li>
+                <li><button type="button">PERSONAGEM 87%</button></li>
+                <li><button type="button">MAPA 63%</button></li>
+</ul>
+            </section>
+            <button id="jogar">[ JOGAR ]</button>
+        </main>
+    </div>
+</body>
+</html>

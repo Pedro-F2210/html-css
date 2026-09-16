@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Painel de controlo</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: rgb(126, 138, 187);
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        h1 {
+            position: absolute;
+            text-align: center;
+            top: 0px;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background-color: lightyellow;
+        }
+
+        #painel {
+            position: absolute;
+            width: 700px;
+            height: 500px;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        button {
+            position: absolute;
+        }
+
+        #perfil {
+            top: 15px;
+            left: 15px;
+        }
+
+        #definicao {
+            top: 15px;
+            right: 15px;
+        }
+
+        #mais {
+             top: 50%;
+             left: 50%;
+             transform: translate(-50%, -50%);
+        }
+
+        #sair {
+            left: 15px;
+            bottom: 15px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Meu Painel</h1>
+    <div id="painel">
+        <button id="perfil">Perfil</button>
+        <button id="definicao">Definições</button>
+        <button id="mais">+</button>
+        <button id="sair">Sair</button>
+    </div>
+</body>
+</html>
