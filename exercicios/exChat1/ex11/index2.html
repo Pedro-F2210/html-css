@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição</title>
+</head>
+<body>
+    <h1>Inscrição numa competição</h1>
+    <form action="" method="get">
+        <p>
+            <label for="inome">Nome:</label>
+            <input type="text" name="nome" id="inome" min="3" max="40" placeholder="Nome completo" autocomplete="name">
+        </p>
+        <p>
+            <label for="iidade">Idade:</label>
+            <input type="number" name="idade" id="iidade" min="13" max="30" placeholder="13 a 30">
+        </p>
+        <p>
+            <label for="inota">Nota esperada:</label> 
+            <input type="number" name="nota" id="inota" min="0" max="20" placeholder="0 a 20" step="0.1">
+        </p>
+        <p>
+            <label for="imes">Mês da competição:</label>
+            <input type="month" name="mes" id="imes" required>
+        </p>
+        <p>
+            <label for="idata">Data da competição:</label>
+            <input type="date" name="data" id="idata" required>
+        </p>
+        <p>
+            <label for="ihora">Hora da competição:</label>
+            <input type="time" name="hora" id="ihora" required>
+        </p>
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </p>
+    </form>
+</body>
+</html>
