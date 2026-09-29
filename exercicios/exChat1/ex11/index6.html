@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Candidatura</title>
+</head>
+<body>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <p>
+                <label for="inome">Nome completo</label>
+                <input type="text" name="nome" id="inome" minlength="3" maxlength="50" autocomplete="name" required>
+            </p>
+            <p>
+                <label for="iemail">Email</label>
+                <input type="email" name="email" id="iemail" required autocomplete="email">
+            </p>
+            <p>
+                <label for="itel">Telefone</label>
+                <input type="tel" name="tel" id="itel" required pattern="^9[1236]\d{7}$">
+            </p>
+            <p>
+                <label for="icod">Código postal</label>
+                <input type="text" name="cod" id="icod" required pattern="^\d{4}-\d{3}$">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Informações académicas</legend>
+            <p>
+                <label for="iano">Ano de conclusão</label>
+                <input type="number" name="ano" id="iano" min="2026" max="2035" required>
+            </p>
+            <p>
+                <label for="imed">Média</label>
+                <input type="number" name="med" id="imed" min="0" max="20" step="0.1" required> 
+            </p>
+            <p>
+                <label for="iniv">Nível de experiência</label>
+                <input type="range" name="niv" id="iniv" min="0" max="10" value="5">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Preferências</legend>
+            <p>
+                <label for="icor">Cor preferida</label>
+                <input type="color" name="cor" id="icor" value="#0000ff">
+            </p>
+            <p>
+                <label for="idata">Data disponível para começar</label>
+                <input type="date" name="data" id="idata" required>
+            </p>
+            <p>
+                <label for="ihora">Hora preferida para entrevista</label>
+                <input type="time" name="hora" id="ihora" required>
+            </p>
+            <p>
+                <label for="imes">Mês preferido para entrevista</label>
+                <input type="month" name="mes" id="imes" required>
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Perfil</legend>
+            <p>
+                <label for="ifoto">Foto de perfil</label>
+                <input type="file" name="foto" id="ifoto" required>
+            </p>
+            <p>
+                <label for="idoc">Documento adicional</label>
+                <input type="file" name="doc" id="idoc">
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Finalização</legend>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="Limpar">
+        </fieldset>
+    </form>
+</body>
+</html>
