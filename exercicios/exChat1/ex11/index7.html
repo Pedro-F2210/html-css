@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inscrição</title>
+</head>
+<body>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <fieldset>
+        <legend>País</legend>
+                <p>
+                    <select name="País" id="ips">
+                        <option value="" selected>--- Escolha o País ---</option>
+                        <optgroup label="Europa">
+                            <option value="PT">Portugal</option>
+                            <option value="ES">Espanha</option>
+                            <option value="FR">França</option>
+                        </optgroup>
+                        <optgroup label="África">
+                            <option value="AO">Angola</option>
+                            <option value="MZ">Moçambique</option>
+                            <option value="CV">Cabo Verde</option>
+                        </optgroup>
+                    </select>    
+                </p>
+        </fieldset>
+        <fieldset>
+            <legend>Área de interesse</legend>
+                    <p>
+                        <label for="iar">Sugestões: </label>
+                        <input type="text" name="ar" id="iar" list="lstar">
+                        <datalist id="lstar">
+                            <option>Front-end</option>
+                            <option>Back-end</option>
+                            <option>Full-stack</option>
+                            <option>Cibersegurança</option>
+                            <option>Inteligência Artificial</option>
+                            <option>Desenvolvimento de Jogos</option>
+                        </datalist>
+                    </p>
+        </fieldset>
+        <fieldset>
+            <p>
+                <label for="iexp">Experiência anterior</label><br>
+                <textarea name="experiencia" id="iexp" cols="40" rows="8"></textarea>
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
