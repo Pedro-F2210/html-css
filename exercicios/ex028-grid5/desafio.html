@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio interface</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 3fr 1fr;
+            grid-template-rows: 80px 1fr 80px;
+            gap: 5px;
+        }
+
+        .header {
+            background-color: red;
+            grid-column: 1 / 4;
+        }
+
+        .principal {
+            background-color: green;
+            grid-column: 1 / 3;
+        }
+
+        .secundario {
+            background-color: blue;
+            grid-column: 3 / 4;
+        }
+
+        .footer {
+            background-color: yellow;
+            grid-column: 1 / 4;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">topo</div>
+        <div class="header">menu</div>
+        <div class="principal">conteúdo principal</div>
+        <div class="secundario">secundário</div>
+        <div class="footer">rodapé</div>
+    </div>
+</body>
+</html>
